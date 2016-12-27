@@ -86,11 +86,9 @@ describe('Arrow function', () => {
 
               setTimeout(() => {
                   this.age++;
-                  expect(actual).equal(11);
-
+                  expect(this.age).equal(11);
                   done();// done is function used by mocha to manage the async call
-
-              }, 2000);
+              }, 1000);
           }
 
           const person = new Person();

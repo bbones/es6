@@ -6,7 +6,6 @@ describe('es6 parameter destructuring', function() {
     function drawES6Chart({size : size, cords : cords, radius: radius}
         = {size : 'big', cords : {x : 0, y : 0}, radius : 25 }
     /* // TODO: Provide the parameter desctructuring to satisfy all assertions below  */) {
-      console.log(size, cords, radius);
       return [size, cords, radius];
     }
     let actual = drawES6Chart();
